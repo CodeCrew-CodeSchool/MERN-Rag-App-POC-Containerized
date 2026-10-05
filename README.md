@@ -49,6 +49,8 @@ The browser only sends questions. Developers configure RAG sources in `backend/a
 
 Install Docker with Docker Compose support. Node.js, Ollama, and application dependencies run inside containers.
 
+You will also need to create a mongodb cluster using Atlas to run the app.
+
 ## 1. Create service environment files
 
 From the repository root:
