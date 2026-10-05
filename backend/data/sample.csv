@@ -1,0 +1,4 @@
+topic,description
+RAG,Retrieval augmented generation adds retrieved context before an LLM generates an answer.
+EmbedJS,EmbedJS provides loaders embeddings vector storage and a RAG application builder.
+Ollama,Ollama runs the local language model and embedding model for this proof of concept.

@@ -1,0 +1,21 @@
+{
+  "name": "rag-poc-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node app.mjs"
+  },
+  "dependencies": {
+    "@llm-tools/embedjs": "0.1.31",
+    "@llm-tools/embedjs-hnswlib": "0.1.31",
+    "@llm-tools/embedjs-loader-csv": "0.1.31",
+    "@llm-tools/embedjs-loader-pdf": "0.1.31",
+    "@llm-tools/embedjs-loader-web": "0.1.31",
+    "@llm-tools/embedjs-mongodb": "0.1.31",
+    "@llm-tools/embedjs-ollama": "0.1.31",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0"
+  }
+}
