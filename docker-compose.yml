@@ -26,6 +26,7 @@ services:
           "CMD",
           "node",
           "-e",
+          # Docker periodically calls the backend’s health endpoint to make sure the server is still working.
           "fetch('http://localhost:3000/api/health/live').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
         ]
       interval: 10s
@@ -46,6 +47,7 @@ services:
       test:
         [
           "CMD-SHELL",
+          # Docker checks that both the Ollama chat model and embedding model have been downloaded before considering the Ollama service healthy.
           "ollama show \"$${OLLAMA_MODEL}\" >/dev/null 2>&1 && ollama show \"$${OLLAMA_EMBEDDING_MODEL}\" >/dev/null 2>&1"
         ]
       interval: 10s
