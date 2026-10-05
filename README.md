@@ -224,3 +224,7 @@ Configured sources are added with EmbedJS loaders. Questions are answered with:
 ```js
 await rag.query(message);
 ```
+
+RAG Query Flow
+
+![RAG Flow Diagram](./RAGAppQuery_Infographic.png)
